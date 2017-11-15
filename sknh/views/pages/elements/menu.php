@@ -1,0 +1,271 @@
+<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+
+    <ul class="nav menu">
+        <li class="active"><a href="?pg=home"><span class="glyphicon glyphicon-Reception"></span> <?php echo $log_segment; ?> Dashboard</a></li>
+        <li class="parent">
+            <a href="#">
+                <span data-toggle="collapse" href="#sub-item-4" class="icon"><span class="glyphicon glyphicon-plus"></span></span>
+                <span data-toggle="collapse" href="#sub-item-4" class="icon">Hospital Mandatory</span> 
+
+            </a>
+            <ul class="children collapse" id="sub-item-4">
+                <li id="subitem_1">
+                    <a class="" href="?pg=departments">
+                        <span class="glyphicon glyphicon-share-alt"></span> Add New Department
+                    </a>
+                </li>
+                <li id="subitem_2">
+                    <a class="" href="?pg=beds">
+                        <span class="glyphicon glyphicon-share-alt"></span> Add New Bed Types
+                    </a>
+                </li>
+                <li id="subitem_3">
+                    <a class="" href="?pg=provisional">
+                        <span class="glyphicon glyphicon-share-alt"></span> Add Prov. Diagnosis
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="parent" style="display:none">
+            <a href="#">
+                <span data-toggle="collapse" href="#sub-item-2" class="icon"><span class="glyphicon glyphicon-plus"></span></span>
+                <span data-toggle="collapse" href="#sub-item-2" class="icon">Doctors</span> 
+
+            </a>
+            <ul class="children collapse" id="sub-item-2">
+                <li>
+                    <a class="" href="?pg=doctors">
+                        <span class="glyphicon glyphicon-share-alt"></span> Add New Doctors
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="?pg=doclist">
+                        <span class="glyphicon glyphicon-share-alt"></span> Dostors List
+                    </a>
+                </li>
+                <!--                <li>
+                                    <a class="" href="?pg=docattend">
+                                        <span class="glyphicon glyphicon-share-alt"></span> Dostor's Attendance
+                                    </a>
+                                </li>-->
+            </ul>
+        </li>
+        <li class="parent ">
+            <a href="#">
+                <span data-toggle="collapse" href="#sub-item-3" class="icon"><span class="glyphicon glyphicon-plus"></span></span>
+                <span data-toggle="collapse" href="#sub-item-3" class="icon">Employees</span> 
+
+            </a>
+            <ul class="children collapse" id="sub-item-3">
+                <li id="subitem_4">
+                    <a class="" href="?pg=employee">
+                        <span class="glyphicon glyphicon-share-alt"></span> Add Employee
+                    </a>
+                </li>
+                <li id="subitem_5">
+                    <a class="" href="?pg=employeelist">
+                        <span class="glyphicon glyphicon-share-alt"></span> Employee List
+                    </a>
+                </li>
+                <li id="subitem_6">
+                    <a class="" href="?pg=emp_payment">
+                        <span class="glyphicon glyphicon-share-alt"></span> Employee Payment
+                    </a>
+                </li>
+                <li id="subitem_7">
+                    <a class="" href="?pg=emp_department">
+                        <span class="glyphicon glyphicon-share-alt"></span> Add Employee Type
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="parent patient">
+            <a href="#">
+                <span data-toggle="collapse" href="#sub-item-1" class="icon"><span class="glyphicon glyphicon-plus"></span></span>
+                <span data-toggle="collapse" href="#sub-item-1" class="icon">Patients</span> 
+
+            </a>
+            <ul class="children collapse" id="sub-item-1">
+                <li id="subitem_8">
+                    <a class="" href="?pg=admission">
+                        <span class="glyphicon glyphicon-share-alt"></span> Admit New Patients
+                    </a>
+                </li>
+                <li id="subitem_9">
+                    <a class="" href="?pg=admission_form">
+                        <span class="glyphicon glyphicon-share-alt"></span> Print Admission Form
+                    </a>
+                </li>
+                <li id="subitem_10">
+                    <a class="" href="?pg=discharge">
+                        <span class="glyphicon glyphicon-share-alt"></span> Patient Discharge
+                    </a>
+                </li>
+                <li id="subitem_11">
+                    <a class="" href="?pg=birth_certificate">
+                        <span class="glyphicon glyphicon-share-alt"></span> Birth Certificate
+                    </a>
+                </li>
+                <li id="subitem_12">
+                    <a class="" href="?pg=birth_list">
+                        <span class="glyphicon glyphicon-share-alt"></span> Birth List
+                    </a>
+                </li>
+                <li id="subitem_13">
+                    <a class="" href="?pg=payment">
+                        <span class="glyphicon glyphicon-share-alt"></span> Patient Payment
+                    </a>
+                </li>
+                <li id="subitem_14">
+                    <a class="" href="?pg=finalbill">
+                        <span class="glyphicon glyphicon-share-alt"></span> Generate Patient Bills
+                    </a>
+                </li>
+                <li id="subitem_15">
+                    <a class="" href="?pg=patient_account">
+                        <span class="glyphicon glyphicon-share-alt"></span> Patient Account Status
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="parent ">
+            <a href="#">
+                <span data-toggle="collapse" href="#sub-item-5" class="icon"><span class="glyphicon glyphicon-plus"></span></span>
+                <span data-toggle="collapse" href="#sub-item-5" class="icon">Accounts</span> 
+
+            </a>
+            <ul class="children collapse" id="sub-item-5">
+                <li id="subitem_16">
+                    <a class="inc_report" href="?pg=income_report">
+                        <span class="glyphicon glyphicon-share-alt"></span> Income Report
+                    </a>
+                </li>
+                <li id="subitem_17">
+                    <a class="" href="?pg=partner_income">
+                        <span class="glyphicon glyphicon-share-alt"></span> Partner Income Report
+                    </a>
+                </li>
+                <li id="subitem_18">
+                    <a class="" href="?pg=expense">
+                        <span class="glyphicon glyphicon-share-alt"></span> Daily Expense
+                    </a>
+                </li>
+                <li id="subitem_19">
+                    <a class="" href="?pg=expense_report">
+                        <span class="glyphicon glyphicon-share-alt"></span> Expense Report
+                    </a>
+                </li>
+                <!--<li id="subitem_20">
+                    <a class="" href="?pg=paydoc">
+                        <span class="glyphicon glyphicon-share-alt"></span> SKNH To Doctor
+                    </a>
+                </li>-->
+                <li id="subitem_21">
+                    <a class="" href="?pg=paynshm">
+                        <span class="glyphicon glyphicon-share-alt"></span> Doctor To SKNH
+                    </a>
+                </li>
+                 <li id="subitem_28">
+                    <a class="" href="?pg=payReport">
+                        <span class="glyphicon glyphicon-share-alt"></span> Doctor's Payment
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+        <li class="parent ">
+            <a href="#">
+                <span data-toggle="collapse" href="#sub-item-7" class="icon"><span class="glyphicon glyphicon-plus"></span></span>
+                <span data-toggle="collapse" href="#sub-item-7" class="icon">Reports</span> 
+
+            </a>
+            <ul class="children collapse" id="sub-item-7">
+                <li id="subitem_19">
+                    <a class="" href="?pg=admission_report">
+                        <span class="glyphicon glyphicon-share-alt"></span> Admission Report
+                    </a>
+                </li>
+                <li id="subitem_20">
+                    <a class="" href="?pg=discharge_report">
+                        <span class="glyphicon glyphicon-share-alt"></span> Discharge Report
+                    </a>
+                </li>
+                <li id="subitem_21">
+                    <a class="" href="?pg=municipality">
+                        <span class="glyphicon glyphicon-share-alt"></span> Municipality Birth Report
+                    </a>
+                </li>
+                <li id="subitem_22">
+                    <a class="" href="?pg=cmoh">
+                        <span class="glyphicon glyphicon-share-alt"></span> C.M.O.H Report
+                    </a>
+                </li>
+                <li id="subitem_23">
+                    <a class="" href="?pg=it_report">
+                        <span class="glyphicon glyphicon-share-alt"></span> IT Report
+                    </a>
+                </li>
+                
+
+            </ul>
+        </li>
+        <li class="parent ">
+            <a href="#">
+                <span data-toggle="collapse" href="#sub-item-6" class="icon"><span class="glyphicon glyphicon-plus"></span></span>
+                <span data-toggle="collapse" href="#sub-item-6" class="icon">User &amp; Password</span> 
+
+            </a>
+            <ul class="children collapse" id="sub-item-6">
+                <li id="subitem_24">
+                    <a class="" href="?pg=usergroup">
+                        <span class="glyphicon glyphicon-share-alt"></span> Create User
+                    </a>
+                </li>
+                <li id="subitem_25">
+                    <a class="" href="?pg=users">
+                        <span class="glyphicon glyphicon-share-alt"></span> User List
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="parent ">
+            <a href="#">
+                <span data-toggle="collapse" href="#sub-item-8" class="icon"><span class="glyphicon glyphicon-plus"></span></span>
+                <span data-toggle="collapse" href="#sub-item-8" class="icon">Special Tools</span> 
+
+            </a>
+            <ul class="children collapse" id="sub-item-8">
+                <li id="subitem_26">
+                    <a class="" href="?pg=wordpad">
+                        <span class="glyphicon glyphicon-share-alt"></span> Word Pad
+                    </a>
+                </li>
+                <li id="subitem_27">
+                    <a class="" href="?pg=notification">
+                        <span class="glyphicon glyphicon-share-alt"></span> Notifications
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!--<div class="attribution"></div>-->
+</div><!--/.sidebar-->
+<script>
+     $(document).ready(function () {
+        $.ajax({url: "action.php?action=getusertype", success: function (result) {
+             if(result == 1){
+                 $('li.parent').show();
+            }else if(result == 2){
+                $('li.parent').show();
+                $('.inc_report').attr('href','?pg=income');
+                $('#subitem_17,#subitem_25').hide();
+            }else if(result == 3){
+                $('li.parent.patient').show();
+                $('#subitem_10,#subitem_11,#subitem_12,#subitem_14').hide();
+            }
+            
+       }});
+    });
+</script>
