@@ -1,3 +1,4 @@
 sknh/db/
 *.log
 *.sql
+*.php~
