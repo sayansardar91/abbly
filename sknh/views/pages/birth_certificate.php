@@ -130,7 +130,7 @@
                         <div class="row">
                             <div class="col-xs-6">
                                 <div class="form-group">
-                                    <label for="doc_name" class="col-xs-4 control-label">4. (a) Name of the Father Full</label>
+                                    <label for="doc_name" class="col-xs-4 control-label">4. Name of the Father Full</label>
                                     <div class="col-xs-7">
                                         <input type="text" class="form-control" id="baby_father_name" name="baby_father_name" />
                                     </div>
@@ -138,7 +138,7 @@
                             </div>
                             <div class="col-xs-6">
                                 <div class="form-group">
-                                    <label for="doj" class="col-xs-5 control-label">(b)Name of the Mother Full</label>
+                                    <label for="doj" class="col-xs-5 control-label">5. Name of the Mother Full</label>
                                     <div class="col-xs-6">
                                         <input type="text" class="form-control" id="baby_mother_name" name="baby_mother_name" />
                                     </div>
@@ -148,27 +148,27 @@
                         <div class="row">
                             <div class="col-xs-6">
                                 <div class="form-group">
-                                    <label class="col-xs-4 control-label">5. (a) Permanent Address of The Parents</label>
+                                    <label for="dor" class="col-xs-5 control-label">
+                                        6. Address of The Parents at The Time of birth</label>
+                                    <div class="col-xs-6">
+                                        <textarea class="form-control" rows="3" style="resize: none" id="baby_pr_address" name="baby_pr_address"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="form-group">
+                                    <label class="col-xs-4 control-label">7. Permanent Address of The Parents</label>
                                     <div class="col-xs-7">
                                         <textarea class="form-control" rows="3" style="resize: none" id="baby_pm_address" name="baby_pm_address"></textarea>
                                     </div>
                                 </div>
 
                             </div>
-                            <div class="col-xs-6">
-                                <div class="form-group">
-                                    <label for="dor" class="col-xs-5 control-label">
-                                        (b) Address of The Parents at The Time of birth</label>
-                                    <div class="col-xs-6">
-                                        <textarea class="form-control" rows="3" style="resize: none" id="baby_pr_address" name="baby_pr_address"></textarea>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-6">
                                 <div class="form-group">
-                                    <label class="col-xs-4 control-label">6. (a) Place Of Birth : </label>
+                                    <label class="col-xs-4 control-label">8. Place Of Birth : </label>
                                     <div class="col-xs-7">
                                         <div class="radio">
                                             <label>
@@ -180,62 +180,34 @@
                                             <label>
                                                 <input type="radio" name="baby_pob" id="baby_pob3" value="3" >House&nbsp;&nbsp;
                                             </label>
-                                            <label>
-                                                <input type="radio" name="baby_pob" id="baby_pob4" value="4" >Other Places
-                                            </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xs-6">
-                                <div class="form-group">
-                                    <label for="dor" class="col-xs-5 control-label">
-                                        (b) Address of Place of Birth</label>
-                                    <div class="col-xs-6">
-                                        <textarea class="form-control" rows="3" style="resize: none" id="baby_pob_address" name="baby_pob_address"></textarea>
+                                <div class="col-xs-12 form-group">
+                                    <label for="dor" class="col-xs-4 control-label">
+                                        Address of Place of Birth</label>
+                                    <div class="col-xs-8">
+                                        <textarea class="form-control" rows="3" style="resize: none" id="baby_pob_address" name="baby_pob_address" disabled></textarea>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-6">
-                                <div class="form-group">
-                                    <label for="dor" class="col-xs-5 control-label">
-                                        8. Residence of the Mother</label>
+                                <div class="col-xs-12 form-group">
+                                    <label for="dor" class="control-label">
+                                        10. Town or Village of Residence of the Mother</label>
+                                        (Place where the mother usually lives. This can be different from the place where the delivery occurred.The House address is not to be entered.)
                                 </div>
-                                (Place where the mother usually lives. 
-                                This can be different from the place where the delivery occurred. 
-                                The House address is not to be entered.)
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-6">
                                 <div class="form-group">
-                                    <label for="doj" class="col-xs-5 control-label">Is it a Town or Village?</label>
-                                    <div class="col-xs-6">
-                                        <div class="col-xs-5">
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="baby_res_place" id="baby_res_place1" value="2" >Town
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-5">
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="baby_res_place" id="baby_res_place2" value="1" >Village
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-8">
-                                <div class="form-group">
-                                    <label for="doj" class="col-xs-5 control-label">(a) Name of the village / Town</label>
-                                    <div class="col-xs-3">
+                                    <label for="doj" class="col-xs-5 control-label">a) Name of Town/Village:</label>
+                                    <div class="col-xs-7">
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="baby_place_name" name="baby_place_name"/>
                                         </div>
@@ -244,10 +216,33 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-8">
+                            <div class="col-xs-6">
                                 <div class="form-group">
-                                    <label for="doj" class="col-xs-5 control-label">(b) Name of the District</label>
-                                    <div class="col-xs-3">
+                                    <label for="doj" class="col-xs-5 control-label">b) Is it a Town or Village?</label>
+                                    <div class="col-xs-6">
+                                        <div class="col-xs-5">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="baby_res_place" id="baby_res_place1" value="T" >Town
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="baby_res_place" id="baby_res_place2" value="V" >Village
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="form-group">
+                                    <label for="doj" class="col-xs-5 control-label">c) Name of District</label>
+                                    <div class="col-xs-7">
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="baby_dist_name" name="baby_dist_name"/>
                                         </div>
@@ -256,10 +251,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-8">
+                            <div class="col-xs-6">
                                 <div class="form-group">
-                                    <label for="doj" class="col-xs-5 control-label">(c) Name of the State</label>
-                                    <div class="col-xs-3">
+                                    <label for="doj" class="col-xs-5 control-label">d) Name of the State</label>
+                                    <div class="col-xs-7">
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="baby_state_name" name="baby_state_name"/>
                                         </div>
@@ -269,7 +264,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-3">
-                                <label class="control-label">9. Religion of The Family : </label>
+                                <label class="control-label">11. Religion of The Family : </label>
                             </div>
                             <div class="col-md-9">
                                 <div class="col-md-3">
@@ -303,13 +298,13 @@
                 <div class="row">&nbsp;</div>
                 <div class="row">
                     <div class="col-md-3">
-                        <label class="control-label">10. Father's Level Of Education : </label>
+                        <label class="control-label">12. Father's Level Of Education : </label>
                     </div>
                     <div class="col-md-3">
                         <input type="text" id='baby_gurd_quali' name="baby_gurd_quali" />
                     </div>
                     <div class="col-md-3">
-                        <label class="control-label">11. Mother's Level Of Education : </label>
+                        <label class="control-label">13. Mother's Level Of Education : </label>
                     </div>
                     <div class="col-md-3">
                         <input type="text" id='baby_patient_quali' name="baby_patient_quali" />
@@ -318,13 +313,13 @@
                 <div class="row">&nbsp;</div>
                 <div class="row">
                     <div class="col-md-3">
-                        <label class="control-label">12. Father's occupation : </label>
+                        <label class="control-label">14. Father's occupation : </label>
                     </div>
                     <div class="col-md-3">
                         <input type="text" id='baby_gurd_ocu' name="baby_gurd_ocu" />
                     </div>
                     <div class="col-md-3">
-                        <label class="control-label">13. Mother's occupation : </label>
+                        <label class="control-label">15. Mother's occupation : </label>
                     </div>
                     <div class="col-md-3">
                         <input type="text" id='baby_patient_ocu' name="baby_patient_ocu" />
@@ -333,13 +328,13 @@
                 <div class="row">&nbsp;</div>
                 <div class="row">
                     <div class="col-md-3">
-                        <label class="control-label">14. Age of the mother (in completed years) at the time of marriage : </label>
+                        <label class="control-label">16. Age of the mother (in completed years) at the time of marriage : </label>
                     </div>
                     <div class="col-md-3">
                         <input type="text" id='baby_m_age' name="baby_m_age" />
                     </div>
                     <div class="col-md-3">
-                        <label class="control-label">15. Age of the mother (in completed years) at the time of this birth : </label>
+                        <label class="control-label">17. Age of the mother (in completed years) at the time of this birth : </label>
                     </div>
                     <div class="col-md-3">
                         <input type="text" id='baby_age' name="baby_age" />
@@ -348,7 +343,7 @@
                 <div class="row">&nbsp;</div>
                 <div class="row">
                     <div class="col-md-5" >
-                        <label>16. Number of children born alive to the mother so far including this child :</label>
+                        <label>18. Number of children born alive to the mother so far including this child :</label>
                     </div>
                     <div class="col-md-5">
                         <input type="text" id='baby_child_no' name="baby_child_no" />
@@ -357,7 +352,7 @@
                 <div class="row">&nbsp;</div>
                 <div class="row">
                     <div class="col-md-5" >
-                        <label>17. Type of attention at delivery :</label>
+                        <label>19. Type of attention at delivery :</label>
                     </div>
                     <div class="col-md-5">
                         <div class="radio">
@@ -390,7 +385,7 @@
                 <div class="row">&nbsp;</div>
                 <div class="row">
                     <div class="col-md-5" >
-                        <label>18. Method of delivery :</label>
+                        <label>20. Method of delivery :</label>
                     </div>
                     <div class="col-md-5">
                         <div class="radio">
@@ -413,13 +408,13 @@
                 <div class="row">&nbsp;</div>
                 <div class="row">
                     <div class="col-md-3" >
-                        <label class="control-label">19. Birth Weight(in kgs) (if available): </label>
+                        <label class="control-label">21. Birth Weight(in kgs) (if available): </label>
                     </div>
                     <div class="col-md-3">
                         <input type="text" id='baby_weight' name="baby_weight" class="form-control"/>
                     </div>
                     <div class="col-md-3" >
-                        <label class="control-label">20. Duration of Pregnancy(in weeks): </label>
+                        <label class="control-label">22. Duration of Pregnancy(in weeks): </label>
                     </div>
                     <div class="col-md-3">
                         <input type="text" id='baby_preg_dur' name="baby_preg_dur" class="form-control"/>
@@ -520,6 +515,9 @@
                     $('#' + i + value).val(value).attr('checked', 'checked');
                 } else if (i === 'baby_pob') {
                     $('#' + i + value).val(value).attr('checked', 'checked');
+                    if(value == 3){
+                        $("#baby_pob_address").prop("disabled",false);
+                    }
                 } else if (i === 'hr') {
                     document.getElementById("hr").selectedIndex = value;
                 } else if (i === 'min') {
@@ -532,7 +530,19 @@
                 } else if (i === 'baby_religion') {
                     $('#' + i + value).val(value).attr('checked', 'checked');
                 } else if (i === 'baby_res_place') {
-                    $('#' + i + value).val(value).attr('checked', 'checked');
+                    if(value == 1){
+                        $('#' + i + "2").val("V").attr('checked', 'checked');
+                    }else if(value == 2){
+                        $('#' + i + "1").val("T").attr('checked', 'checked');
+                    }else{
+                        if(value == "T"){
+                            $('#' + i + "1").val(value).attr('checked', 'checked');
+                        }else if(value == "V"){
+                            $('#' + i + "2").val(value).attr('checked', 'checked');
+                        }
+                    }
+                    
+
                 } else if (i === 'baby_atn_delivery') {
                     $('#' + i + value).val(value).attr('checked', 'checked');
                 } else if (i === 'baby_method_delivery') {
@@ -571,6 +581,14 @@
 
             });
         });
+    });
+
+    $("input[name=baby_pob]").on('change',function(){
+        if($(this).val()==3){
+            $("#baby_pob_address").prop("disabled",false).focus();
+        }else{
+            $("#baby_pob_address").prop("disabled",true).val('');
+        }
     });
 </script>
 <style>

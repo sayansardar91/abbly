@@ -24,21 +24,21 @@ $dompdf->set_paper(array(0,0,591,827), 'landscape');
 $bb_sex = null;
 
 $html = '<html>
-    
-  <head>
+<head>
     <style>
     @page { margin: 0px; }
     img {margin:0px;padding:0px}
       #dob {
             position: absolute;
-            top: 100px;
-            left: 180px;
+            top: 130px;
+            left: 350px;
             font-weight: bold;
+            font-size: 15px;
          }
         #bbsex {
             position: absolute;
-            top: 140px;
-            left: 220px;
+            top: 150px;
+            left: 350px;
             font-weight: bold;
          }
         #bbname {
@@ -49,27 +49,29 @@ $html = '<html>
          }
          #bbfather {
             position: absolute;
-            top: 210px;
-            left: 240px;
+            top: 217px;
+            left: 270px;
             font-weight: bold;
          }
          #bbmather {
             position: absolute;
-            top: 230px;
-            left: 240px;
+            top: 277px;
+            left: 270px;
             font-weight: bold;
          }
          #bbadd2 {
             position: absolute;
-            top: 272px;
-            left: 100px;
+            top: 370px;
+            left: 200px;
             font-weight: bold;
+            width: 300px;
          }
          #bbad2 {
             position: absolute;
-            top: 310px;
-            left: 100px;
+            top: 430px;
+            left: 200px;
             font-weight: bold;
+            width: 300px;
          }
          #pobh {
             position: absolute;
@@ -78,13 +80,27 @@ $html = '<html>
          }
          #pobi {
             position: absolute;
-            top: 332px;
-            left: 235px;
+            top: 520px;
+            left: 145px;
+         }
+         #pobhi_add{
+            position: absolute;
+            top: 517px;
+            left: 255px;
+            width: 200px;
+            font-size: 14px;
+            font-weight: bold;
          }
          #pobhs {
             position: absolute;
-            top: 335px;
-            left: 300px;
+            top: 549px;
+            left: 145px;
+         }
+         #pobhs_add{
+            position: absolute;
+            top: 549px;
+            left: 320px;
+            width: 100px;
          }
          #pobo {
             position: absolute;
@@ -118,183 +134,186 @@ $html = '<html>
          
          #vil {
             position: absolute;
-            top: 210px;
-            left: 540px;
+            top: 320px;
+            left: 650px;
          }
          #town {
             position: absolute;
-            top: 210px;
-            left: 500px;
+            top: 320px;
+            left: 550px;
          }
          #add {
             position: absolute;
-            top: 210px;
-            left: 580px;
+            top: 252px;
+            left: 700px;
             font-weight: bold;
+            width:120px;
          }
          #dist {
             position: absolute;
-            top: 230px;
-            left: 580px;
+            top: 342px;
+            left: 700px;
             font-weight: bold;
          }
          #state {
             position: absolute;
-            top: 250px;
-            left: 580px;
+            top: 362px;
+            left: 700px;
             font-weight: bold;
          }
          #hindu {
             position: absolute;
-            top: 293px;
-            left: 430px;
+            top: 400px;
+            left: 532px;
+            
          }
          #muslim {
             position: absolute;
-            top: 293px;
-            left:550px;
+            top: 400px;
+            left:600px;
          }
          #chr {
             position: absolute;
-            top: 293px;
-            left:680px;
+            top: 402px;
+            left:664px;
          }
          #fedu {
             position: absolute;
-            top: 335px;
-            left:600px;
+            top: 450px;
+            left:700px;
             font-weight: bold;
          }
          #medu {
             position: absolute;
-            top: 395px;
-            left:600px;
+            top: 520px;
+            left:700px;
             font-weight: bold;
          }
          #focu {
             position: absolute;
-            top: 460px;
-            left:600px;
+            top: 580px;
+            left:700px;
             font-weight: bold;
          }
          #mocu {
             position: absolute;
-            top: 508px;
-            left:600px;
+            top: 125px;
+            left:1030px;
             font-weight: bold;
          }
          #mage {
             position: absolute;
-            top: 140px;
-            left:975px;
+            top: 170px;
+            left:1030px;
             font-weight: bold;
          }
          #cage {
             position: absolute;
-            top: 235px;
-            left:975px;
+            top: 230px;
+            left:1030px;
             font-weight: bold;
          }
          #nchd {
             position: absolute;
-            top: 285px;
-            left:975px;
+            top: 275px;
+            left:1030px;
             font-weight: bold;
          }
          #gov {
             position: absolute;
-            top: 315px;
-            left:925px;
+            top: 359px;
+            left:858px;
          }
          #pvt {
             position: absolute;
-            top: 355px;
-            left:975px;
+            top: 383px;
+            left:858px;
          }
          #dnt {
             position: absolute;
-            top: 350px;
-            left:952px;
+            top: 399px;
+            left:858px;
          }
          #tba {
             position: absolute;
-            top: 370px;
-            left:925px;
+            top: 419px;
+            left:858px;
          }
          #roo {
             position: absolute;
-            top: 388px;
-            left:880px;
+            top: 442px;
+            left:858px;
          }
          #norm {
             position: absolute;
-            top: 465px;
-            left:825px;
+            top: 500px;
+            left:876px;
          }
          #cs {
             position: absolute;
-            top: 465px;
-            left:885px;
+            top: 522px;
+            left:876px;
          }
          
          #fv {
             position: absolute;
-            top: 465px;
-            left:1055px;
+            top: 542px;
+            left:876px;
          }
          #wtg {
             position: absolute;
-            top: 490px;
-            left:975px;
+            top: 565px;
+            left:1040px;
             font-weight: bold;
          }
          #wk {
             position: absolute;
-            top: 520px;
-            left:975px;
+            top: 595px;
+            left:1040px;
             font-weight: bold;
          }
 		 #bbsex1{
             position: absolute;
-            top: 660px;
-            left:1022px;
+            top: 690px;
+            left:925px;
             font-weight: bold;
          }
 		 #dob1{
             position: absolute;
-            top: 660px;
-            left:850px;
+            top: 674px;
+            left:858px;
             font-weight: bold;
          }
 		 #pobi1{
-			 position: absolute;
-            top: 700px;
-            left:806px;
+			position: absolute;
+            top: 730px;
+            left:750px;
             font-weight: bold;
 	     }
          #brt_left{
             position: absolute;
-            top: 2px;
-            left:130px;
+            top: 50px;
+            left: 200px;
             font-weight: bold;
          }
          #brt_right{
-                position: absolute;
-            top: 2px;
-            left:650px;
+            position: absolute;
+            top: 58px;
+            left:640px;
             font-weight: bold;
             }
     </style>
   </head>
   <body>
-  <!--<img src="../images/Scan1_1.jpg" width="100%" height="100%"/>-->
+  <!--<img src="../images/new_birth.jpeg" width="100%" height="100%"/>-->
   <div id="brt_left"> S/No. - SKNH/'.$brt_sno.'</div>'
         . '<div id="brt_right"> S/No. - SKNH/'.$brt_sno.'</div>';
 $add = null;  
+
 while($row = mysqli_fetch_assoc($query)){
     $add = explode(",",$row['baby_pm_address']);
-    $html .= '<div id="dob">'.date("d-m-y",  strtotime($row['baby_dob'])).'</div>';
-	$html .= '<div id="dob1">'.date("d-m-y",  strtotime($row['baby_dob'])).'</div>';
+    $html .= '<div id="dob">'.date("d-m-Y",  strtotime($row['baby_dob'])).'</div>';
+	$html .= '<div id="dob1">'.date("d-m-Y",  strtotime($row['baby_dob'])).'</div>';
     switch ($row['baby_sex']){
         case 'M': 
             $html .= '<div id="bbsex">Male</div>';
@@ -313,27 +332,28 @@ while($row = mysqli_fetch_assoc($query)){
     $html .= '<div id="bbad2">'.$row['baby_pr_address'].'</div>';
     switch($row['baby_pob']){
         case 1:
-            $html .= '<div id="pobh"><img src="../images/tick.png" width="18px" height="18px"/></div>';
+            $html .= '<div id="pobi"><img src="../images/tick.png" width="18px" height="18px"/></div>';
+            $html .= "<div id='pobhi_add'>Swarnakamal Nursing Home, Basirhat, 24 Pgs(N), WB</div>";
             break;
         case 2:
             $html .= '<div id="pobi"><img src="../images/tick.png" width="18px" height="18px"/></div>';
-			$html .= '<div id="pobi1"><img src="../images/tick.png" width="18px" height="18px"/></div>';
+            $html .= "<div id='pobhi_add'>Swarnakamal Nursing Home, Basirhat, 24 Pgs(N), WB</div>";
             break;
         case 3:
             $html .= '<div id="pobhs"><img src="../images/tick.png" width="18px" height="18px"/></div>';
-            break;
-        case 4:
-            $html .= '<div id="pobo"><img src="../images/tick.png" width="18px" height="18px"/></div>';
+            $html .= "<div id='pobhs_add'>".$row['baby_pob_address']."</div>";
             break;
     }
-    switch($row['baby_res_place']){
-        case 1:
-            $html .= '<div id="vil"><img src="../images/tick.png" width="18px" height="18px"/></div>';
-            break;
-        case 2:
-            $html .= '<div id="town"><img src="../images/tick.png" width="18px" height="18px"/></div>';
-            break;
+    
+
+    if($row['baby_res_place'] === "V"){
+        $html .= '<div id="vil"><img src="../images/tick.png" width="18px" height="18px"/></div>';
     }
+
+    if($row['baby_res_place'] === "T"){
+        $html .= '<div id="town"><img src="../images/tick.png" width="18px" height="18px"/></div>';
+    }
+
     $html .= '<div id="add">'.$add[0].', '.$add[2].'</div>';
     $html .= '<div id="dist">'.$row['baby_dist_name'].'</div>';
     $html .= '<div id="state">'.$row['baby_state_name'].'</div>';
@@ -389,13 +409,7 @@ while($row = mysqli_fetch_assoc($query)){
     $html .= '<div id="wtg">'.($row['baby_weight'] != ''?$row['baby_weight']:'').' Kg</div>';
     $html .= '<div id="wk">'.$row['baby_preg_dur'].'</div>';
 }
-  $html .= '<div id="addpbl1">Swarnakamal</div>
-  <div id="addpbl2">Nursing Home, Basirhat, 24 Pgs(N), WB</div>
-  <div id="addinf1">Swarnakamal</div>
-  <div id="addinf2">Nursing Home, Basirhat, 24 Pgs(N), WB</div>
-  </body>
-</html>
-';
+
 $html = mb_convert_encoding($html, 'HTML-ENTITIES', 'UTF-8');
 $dompdf->load_html($html);
 $dompdf->render();
