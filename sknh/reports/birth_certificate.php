@@ -30,14 +30,14 @@ $html = '<html>
     img {margin:0px;padding:0px}
       #dob {
             position: absolute;
-            top: 115px;
+            top: 120px;
             left: 350px;
             font-weight: bold;
             font-size: 15px;
          }
         #bbsex {
             position: absolute;
-            top: 135px;
+            top: 140px;
             left: 350px;
             font-weight: bold;
          }
@@ -49,13 +49,13 @@ $html = '<html>
          }
          #bbfather {
             position: absolute;
-            top: 217px;
+            top: 215px;
             left: 280px;
             font-weight: bold;
          }
          #bbmather {
             position: absolute;
-            top: 277px;
+            top: 275px;
             left: 280px;
             font-weight: bold;
          }
