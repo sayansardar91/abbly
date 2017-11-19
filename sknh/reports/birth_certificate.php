@@ -30,33 +30,33 @@ $html = '<html>
     img {margin:0px;padding:0px}
       #dob {
             position: absolute;
-            top: 130px;
+            top: 115px;
             left: 350px;
             font-weight: bold;
             font-size: 15px;
          }
         #bbsex {
             position: absolute;
-            top: 150px;
+            top: 135px;
             left: 350px;
             font-weight: bold;
          }
         #bbname {
             position: absolute;
             top: 155px;
-            left: 220px;
+            left: 230px;
             font-weight: bold;
          }
          #bbfather {
             position: absolute;
             top: 217px;
-            left: 270px;
+            left: 280px;
             font-weight: bold;
          }
          #bbmather {
             position: absolute;
             top: 277px;
-            left: 270px;
+            left: 280px;
             font-weight: bold;
          }
          #bbadd2 {
@@ -81,11 +81,11 @@ $html = '<html>
          #pobi {
             position: absolute;
             top: 520px;
-            left: 145px;
+            left: 135px;
          }
          #pobhi_add{
             position: absolute;
-            top: 517px;
+            top: 510px;
             left: 255px;
             width: 200px;
             font-size: 14px;
@@ -93,8 +93,8 @@ $html = '<html>
          }
          #pobhs {
             position: absolute;
-            top: 549px;
-            left: 145px;
+            top: 544px;
+            left: 140px;
          }
          #pobhs_add{
             position: absolute;
@@ -144,37 +144,37 @@ $html = '<html>
          }
          #add {
             position: absolute;
-            top: 252px;
+            top: 247px;
             left: 700px;
             font-weight: bold;
             width:120px;
          }
          #dist {
             position: absolute;
-            top: 342px;
+            top: 337px;
             left: 700px;
             font-weight: bold;
          }
          #state {
             position: absolute;
-            top: 362px;
+            top: 357px;
             left: 700px;
             font-weight: bold;
          }
          #hindu {
             position: absolute;
-            top: 400px;
+            top: 395px;
             left: 532px;
             
          }
          #muslim {
             position: absolute;
-            top: 400px;
+            top: 395px;
             left:600px;
          }
          #chr {
             position: absolute;
-            top: 402px;
+            top: 395px;
             left:664px;
          }
          #fedu {
@@ -222,43 +222,43 @@ $html = '<html>
          #gov {
             position: absolute;
             top: 359px;
-            left:858px;
+            left:856px;
          }
          #pvt {
             position: absolute;
             top: 383px;
-            left:858px;
+            left:856px;
          }
          #dnt {
             position: absolute;
             top: 399px;
-            left:858px;
+            left:856px;
          }
          #tba {
             position: absolute;
             top: 419px;
-            left:858px;
+            left:856px;
          }
          #roo {
             position: absolute;
             top: 442px;
-            left:858px;
+            left:856px;
          }
          #norm {
             position: absolute;
             top: 500px;
-            left:876px;
+            left:874px;
          }
          #cs {
             position: absolute;
             top: 522px;
-            left:876px;
+            left:874px;
          }
          
          #fv {
             position: absolute;
             top: 542px;
-            left:876px;
+            left:874px;
          }
          #wtg {
             position: absolute;
@@ -292,13 +292,13 @@ $html = '<html>
 	     }
          #brt_left{
             position: absolute;
-            top: 50px;
+            top: 40px;
             left: 200px;
             font-weight: bold;
          }
          #brt_right{
             position: absolute;
-            top: 58px;
+            top: 48px;
             left:640px;
             font-weight: bold;
             }
