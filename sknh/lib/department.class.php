@@ -9,7 +9,7 @@ class department extends database {
     function allDept() {
         $req = "SELECT * FROM `department_details` where `dept_group`=0";
         $result = $this->conn->query($req);
-        $typeArray = "";
+        $typeArray = array();
         while ($row = $result->fetch_assoc()) {
             $typeArray[] = array("id" => $row['id'],
                 "dept_name" => $row['dept_name'],

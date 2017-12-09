@@ -223,7 +223,7 @@ if (isset($action)) {
         case "del_session":
             unset($_SESSION['success']);
             unset($_SESSION['msg']);
-            if ($_SESSION['reg_no']) {
+            if (isset($_SESSION['reg_no'])) {
                 unset($_SESSION['reg_no']);
             }
             break;

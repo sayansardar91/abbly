@@ -17,6 +17,7 @@ $req = "select * from view_discharge where date(`discharge_date`) between date('
 
 $query = $db->conn->query($req);
 $dompdf = new DOMPDF();
+$dompdf->set_option('enable_html5_parser', TRUE);
 $dompdf->set_paper("A4", 'landscape');
 
 

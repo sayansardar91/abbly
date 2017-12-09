@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL);
-ini_set('display_errors', 0);
+ini_set('display_errors', 1);
 
 define('APP_Name', 'Swarna Kamal Nursing Home');
 define('ADDRESS', 'NAIHATI, P.O-BADARTALA, NORTH 24 PARGANAS');

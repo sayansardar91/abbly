@@ -20,7 +20,6 @@ class database {
     public function __construct() {
 		$this->conn = mysqli_connect() or die('Cannot connect to the Data Base');
 		if(!mysqli_select_db($this->conn,DB_NAME)){
-			$this->conn = mysqli_connect("localhost","root","rootadmin") or die('Cannot connect to the Data Base');
 			mysqli_select_db($this->conn,DB_NAME);
 		}
     }

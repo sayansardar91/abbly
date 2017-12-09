@@ -26,6 +26,7 @@ $req = "select *from view_itreport WHERE discharge_date BETWEEN '$from' AND '$to
 
 $query = $db->conn->query($req);
 $dompdf = new DOMPDF();
+$dompdf->set_option('enable_html5_parser', TRUE);
 $dompdf->set_paper("legal", 'landscape');
 $html = '
 <html>

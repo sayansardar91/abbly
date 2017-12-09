@@ -53,6 +53,7 @@ while ($row = mysqli_fetch_assoc($query)) {
 }
 
 $dompdf = new DOMPDF();
+$dompdf->set_option('enable_html5_parser', TRUE);
 $dompdf->set_paper("A4", 'portrait');
 
 

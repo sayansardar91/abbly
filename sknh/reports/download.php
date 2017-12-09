@@ -6,6 +6,7 @@ set_include_path("../dompdf");
 require_once "dompdf_config.inc.php";
 session_start();
 	$dompdf = new DOMPDF();
+	$dompdf->set_option('enable_html5_parser', TRUE);
 	$dompdf->set_paper("legal", 'landscape');
 	$dompdf->load_html($_SESSION['pdfcontent']);
 	$dompdf->render();

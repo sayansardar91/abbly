@@ -19,6 +19,7 @@ $query = $db->conn->query($req);
 
 
 $dompdf = new DOMPDF();
+$dompdf->set_option('enable_html5_parser', TRUE);
 $dompdf->set_paper(array(0,0,591,827), 'landscape');
 
 $bb_sex = null;

@@ -43,20 +43,17 @@ class Random
         return $tmp.rand(1000, 9999).rand(1000, 9999).rand(1000, 9999).rand(100, 999).rand(100, 999); 
     } 
 } 
-
-// Èý¶Î 
-// Ò»¶ÎÊÇÎ¢Ãë Ò»¶ÎÊÇµØÖ· Ò»¶ÎÊÇËæ»úÊý 
 class Guid 
 { 
 
     var $valueBeforeMD5; 
     var $valueAfterMD5; 
 
-    function Guid() 
+    function __construct() 
     { 
         $this->getGuid(); 
     } 
-// 
+
     function getGuid() 
     { 
         $address = NetAddress::getLocalHost(); 

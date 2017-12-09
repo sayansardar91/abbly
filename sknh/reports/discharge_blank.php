@@ -6,6 +6,7 @@ require_once "dompdf_config.inc.php";
 
 
 $dompdf = new DOMPDF();
+$dompdf->set_option('enable_html5_parser', TRUE);
 $dompdf->set_paper("A4", 'portrait');
 
 $html = '
