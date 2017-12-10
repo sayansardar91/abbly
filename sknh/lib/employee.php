@@ -177,7 +177,7 @@ if(`emp_middlename`=null,concat(`emp_firstname`,' ',`emp_lastname`),
 from employee_details WHERE emp_type='E';";
         //echo $req;
         $query = $this->conn->query($req);
-        $results = "";
+        $results = array();
         while ($row = mysqli_fetch_assoc($query)) {
             $results[] = array('id'=>$row['id'],'emp_id'=>$row['emp_id'],'emp_name'=>$row['emp_name'],
                                'emp_homephn'=>$row['emp_homephn'],'emp_workphn' => $row['emp_workphn'],

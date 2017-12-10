@@ -9,7 +9,7 @@ class nhmdetails extends database {
     function allBedCategory() {
         $req = "SELECT * FROM `bed_category` WHERE `status`=1";
         $result = $this->conn->query($req);
-        $typeArray = "";
+        $typeArray = array();
 		$sno = 1;
         while ($row = $result->fetch_assoc()) {
         	
@@ -36,7 +36,7 @@ class nhmdetails extends database {
     function listBedCat() {
         $req = "SELECT `id`,`bed_type` FROM `bed_category` where `status`=1";
         $result = $this->conn->query($req);
-        $typeArray = "";
+        $typeArray = array();
         while ($row = $result->fetch_assoc()) {
             $typeArray[] = array("id" => $row['id'],
                 "bed_type" => $row['bed_type']);
@@ -46,7 +46,7 @@ class nhmdetails extends database {
     }
 
     function listAvailBed($id) {
-        $typeArray = "";
+        $typeArray = array();
         $req = "SELECT `bed_no` FROM `bed_category` where `id`  = '$id'";
         $result = $this->conn->query($req);
 
@@ -74,7 +74,7 @@ class nhmdetails extends database {
     function getBedCharge($id) {
         $req = "SELECT `bed_chrg` FROM `bed_category` where `id`=$id";
         $result = $this->conn->query($req);
-        $typeArray = "";
+        $typeArray = array();
         while ($row = $result->fetch_assoc()) {
             $typeArray["bed_chrg"] = array("bed_chrg" => $row['bed_chrg']);
         }
@@ -86,7 +86,7 @@ class nhmdetails extends database {
         $req = "SELECT a.`id`, b.`bed_type`, a.`bed_name`,a.`status` FROM `bed_details` a, `bed_category` b WHERE a.bed_del = 0 AND a.`bed_type` = b.`id` ORDER BY a.`bed_name`";
 
         $result = $this->conn->query($req);
-        $typeArray = "";
+        $typeArray = array();
 		$sno = 1;
         while ($row = $result->fetch_assoc()) {
             $typeArray[] = array("id"=>$row['id'],"sno" => $sno, "bed_type" => $row['bed_type'],
@@ -153,7 +153,7 @@ class nhmdetails extends database {
         $req = "select prov_diag.id,prov_diag.diog_name,prov_diag.status,department_details.dept_name from prov_diag LEFT JOIN department_details ON prov_diag.dept_id = department_details.id";
 
         $result = $this->conn->query($req);
-        $typeArray = "";
+        $typeArray = array();
 		$sno = 0;
         while ($row = $result->fetch_assoc()) {
             $typeArray[] = array("sno" => ++$sno,
@@ -170,7 +170,7 @@ class nhmdetails extends database {
         $req = "SELECT * from prov_diag where status = 1";
 
         $result = $this->conn->query($req);
-        $typeArray = "";
+        $typeArray = array();
         while ($row = $result->fetch_assoc()) {
             $typeArray[] = array("id" => $row['id'],
                 "diog_name" => $row['diog_name']);

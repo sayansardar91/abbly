@@ -21,7 +21,7 @@ class department extends database {
     function allEmpDept() {
         $req = "SELECT * FROM `department_details` where `dept_group`=1";
         $result = $this->conn->query($req);
-        $typeArray = "";
+        $typeArray = array();
         $id = 1;
         while ($row = $result->fetch_assoc()) {
             $typeArray[] = array("id" => $row['id'],
@@ -36,7 +36,7 @@ class department extends database {
     function deptList($dept_group) {
         $req = "SELECT `id`,dept_name FROM `department_details` where `status`=1 AND `dept_group`=$dept_group";
         $result = $this->conn->query($req);
-        $typeArray = "";
+        $typeArray = array();
         while ($row = $result->fetch_assoc()) {
             $typeArray[] = array("id" => $row['id'],
                 "dept_name" => $row['dept_name']);

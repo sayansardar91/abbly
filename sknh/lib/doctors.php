@@ -41,7 +41,7 @@ class doctors extends database {
                 . "`doc_details` dd LEFT JOIN `department_details` dp "
                 . "ON dd.`dept_id` = dp.`id`";
         $result = $this->conn->query($req);
-        $typeArray = "";
+        $typeArray = array();
         while ($row = $result->fetch_assoc()) {
             $typeArray[] = array("id" => $row['id'],
                 "doc_reg" => $row['doc_reg'],
@@ -63,7 +63,7 @@ class doctors extends database {
                 . "FROM `doc_attendance` a INNER JOIN `doc_details` b ON a.`doc_id` = b.`id` INNER JOIN `department_details` c ON b.`dept_id` = c.`id` "
                 . "WHERE b.`status` = 1";
         $result = $this->conn->query($req);
-        $typeArray = "";
+        $typeArray = array();
         while ($row = $result->fetch_assoc()) {
             $typeArray[] = array("id" => $row['id'],
                 "dept_name" => $row['dept_name'],
@@ -80,7 +80,7 @@ class doctors extends database {
         $req = "SELECT `id`,`doc_name`"
                 . "FROM `doc_details` WHERE `dept_id` = $dept AND doc_type = 'D'";
         $result = $this->conn->query($req);
-        $typeArray = "";
+        $typeArray = array();
         while ($row = $result->fetch_assoc()) {
             $typeArray['doc_details'][] = array("id" => $row['id'],
                 "doc_name" => $row['doc_name']);
@@ -92,7 +92,7 @@ class doctors extends database {
         $req = "SELECT `id`,`doc_name`"
                 . "FROM `doc_details` WHERE doc_type = 'D'";
         $result = $this->conn->query($req);
-        $typeArray = "";
+        $typeArray = array();
         while ($row = $result->fetch_assoc()) {
             $typeArray[] = array("id" => $row['id'],
                 "doc_name" => $row['doc_name']);
@@ -104,7 +104,7 @@ class doctors extends database {
         $req = "SELECT `id`,`doc_name`"
                 . "FROM `doc_details` WHERE `doc_type` = 'A'";
         $result = $this->conn->query($req);
-        $typeArray = "";
+        $typeArray = array();
         while ($row = $result->fetch_assoc()) {
             $typeArray['doc_details'][] = array("id" => $row['id'],
                 "doc_name" => $row['doc_name']);
@@ -118,7 +118,7 @@ class doctors extends database {
                 . "concat(`emp_firstname`,' ',`emp_middlename`,' ',`emp_lastname`)) `doc_name` FROM `employee_details` WHERE `emp_type`='S'";
         $result = $this->conn->query($req);
         $rowcount=mysqli_num_rows($result);
-        $typeArray = "";
+        $typeArray = array();
         if($rowcount>0){
             while ($row = $result->fetch_assoc()) {
             $typeArray['doc_details'][] = array("id" => $row['id'],
@@ -134,7 +134,7 @@ class doctors extends database {
                 . "concat(`emp_firstname`,' ',`emp_middlename`,' ',`emp_lastname`)) `doc_name` FROM `employee_details` WHERE `emp_type`='S'";
         $result = $this->conn->query($req);
         $rowcount=mysqli_num_rows($result);
-        $typeArray = "";
+        $typeArray = array();
         if($rowcount>0){
             while ($row = $result->fetch_assoc()) {
             $typeArray['doc_details'][] = array("id" => $row['id'],
@@ -238,7 +238,7 @@ class doctors extends database {
                 WHERE dr.payment_date BETWEEN '$from' AND '$to' AND dr.atd_doctor = $id ORDER BY dr.payment_date ASC";
         $result = $this->conn->query($req);
         $rowcount=mysqli_num_rows($result);
-        $typeArray = "";
+        $typeArray = array();
         $sno = 1;
         if($rowcount>0){
             while ($row = $result->fetch_assoc()) {
@@ -261,7 +261,7 @@ class doctors extends database {
                 WHERE cr.payment_date BETWEEN '$from' AND '$to' AND cr.atd_doctor = $id ORDER BY cr.payment_date ASC";
         $result = $this->conn->query($req);
         $rowcount=mysqli_num_rows($result);
-        $typeArray = "";
+        $typeArray = array();
         $sno = 1;
         if($rowcount>0){
             while ($row = $result->fetch_assoc()) {
@@ -281,7 +281,7 @@ class doctors extends database {
         $req = "Select * from `doctor_adv` WHERE payment_date BETWEEN '$from' AND '$to' AND atd_doctor = $id ORDER BY payment_date ASC";
         $result = $this->conn->query($req);
         $rowcount=mysqli_num_rows($result);
-        $typeArray = "";
+        $typeArray = array();
         $sno = 1;
         if($rowcount>0){
             while ($row = $result->fetch_assoc()) {
@@ -301,7 +301,7 @@ class doctors extends database {
         $req = "Select * from `nshm_adv` WHERE payment_date BETWEEN '$from' AND '$to' AND atd_doctor = $id ORDER BY payment_date ASC";
         $result = $this->conn->query($req);
         $rowcount=mysqli_num_rows($result);
-        $typeArray = "";
+        $typeArray = array();
         $sno = 1;
         if($rowcount>0){
             while ($row = $result->fetch_assoc()) {
