@@ -355,9 +355,11 @@ while($row = mysqli_fetch_assoc($query)){
     $html .= '<div id="bbmather">'.$row['baby_mother_name'].'</div>';
     $html .= '<div id="m_adhar"><table width="100%"><tr>';
     $m_adhar = str_replace("-","",$row['baby_mother_aadhar']);
+
     for($i=0;$i<=strlen( $m_adhar );$i++){
         $html .= '<td style="padding-left:10px;width:15px;text-align:center;">'.substr( $m_adhar, $i, 1 ).'</td>';
     }
+    
     $html .= '</tr></table></div>';
     $html .= '<div id="bbadd2">'.$row['baby_pm_address'].'</div>';
     $html .= '<div id="bbad2">'.$row['baby_pr_address'].'</div>';
