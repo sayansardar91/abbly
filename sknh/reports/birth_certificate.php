@@ -290,16 +290,31 @@ $html = '<html>
          }
 		 #bbsex1{
             position: absolute;
-            top: 680px;
+            top: 675px;
             left:925px;
             font-weight: bold;
          }
 		 #dob1{
             position: absolute;
-            top: 665px;
+            top: 660px;
             left:858px;
             font-weight: bold;
          }
+
+         #pobi_right{
+            position: absolute;
+            top: 685px;
+            left:925px;
+            font-weight: bold;
+         }
+
+         #pobhs_right{
+            position: absolute;
+            top: 685px;
+            left:950px;
+            font-weight: bold;
+         }
+
 		 #pobi1{
 			position: absolute;
             top: 730px;
@@ -368,14 +383,17 @@ while($row = mysqli_fetch_assoc($query)){
     switch($row['baby_pob']){
         case 1:
             $html .= '<div id="pobi"><img src="../images/tick.png" width="18px" height="18px"/></div>';
+            $html .= '<div id="pobi_right"><img src="../images/tick.png" width="18px" height="18px"/></div>';
             $html .= "<div id='pobhi_add'>Swarnakamal Nursing Home, Basirhat, 24 Pgs(N), WB</div>";
             break;
         case 2:
             $html .= '<div id="pobi"><img src="../images/tick.png" width="18px" height="18px"/></div>';
+            $html .= '<div id="pobi_right"><img src="../images/tick.png" width="18px" height="18px"/></div>';
             $html .= "<div id='pobhi_add'>Swarnakamal Nursing Home, Basirhat, 24 Pgs(N), WB</div>";
             break;
         case 3:
             $html .= '<div id="pobhs"><img src="../images/tick.png" width="18px" height="18px"/></div>';
+            $html .= '<div id="pobhs_right"><img src="../images/tick.png" width="18px" height="18px"/></div>';
             $html .= "<div id='pobhs_add'>".$row['baby_pob_address']."</div>";
             break;
     }
