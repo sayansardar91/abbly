@@ -57,7 +57,7 @@ $html = '<html>
          #f_adhar{
             position: absolute;
             top: 250px;
-            left: 130px;
+            left: 125px;
             font-weight: bold;
             width: 305px;
          }
@@ -70,7 +70,7 @@ $html = '<html>
          #m_adhar{
             position: absolute;
             top: 310px;
-            left: 130px;
+            left: 125px;
             font-weight: bold;
             width: 305px;
          }
@@ -290,13 +290,13 @@ $html = '<html>
          }
 		 #bbsex1{
             position: absolute;
-            top: 690px;
+            top: 680px;
             left:925px;
             font-weight: bold;
          }
 		 #dob1{
             position: absolute;
-            top: 674px;
+            top: 665px;
             left:858px;
             font-weight: bold;
          }
@@ -349,7 +349,7 @@ while($row = mysqli_fetch_assoc($query)){
     $f_adhar = str_replace("-","",$row['baby_father_aadhar']);
 
     for($i=0;$i<=strlen( $f_adhar );$i++){
-        $html .= '<td style="padding-left:10px;width:15px;text-align:center;">'.substr( $f_adhar, $i, 1 ).'</td>';
+        $html .= '<td style="padding-left:5px;width:15px;text-align:center;">'.substr( $f_adhar, $i, 1 ).'</td>';
     }
 
     $html .= '</tr></table></div>';
@@ -359,7 +359,7 @@ while($row = mysqli_fetch_assoc($query)){
     $m_adhar = str_replace("-","",$row['baby_mother_aadhar']);
 
     for($i=0;$i<=strlen( $m_adhar );$i++){
-        $html .= '<td style="padding-left:10px;width:15px;text-align:center;">'.substr( $m_adhar, $i, 1 ).'</td>';
+        $html .= '<td style="padding-left:5px;width:15px;text-align:center;">'.substr( $m_adhar, $i, 1 ).'</td>';
     }
     
     $html .= '</tr></table></div>';
