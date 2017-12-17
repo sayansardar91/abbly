@@ -56,7 +56,7 @@ $html = '<html>
          }
          #f_adhar{
             position: absolute;
-            top: 255px;
+            top: 250px;
             left: 130px;
             font-weight: bold;
             width: 305px;
@@ -69,7 +69,7 @@ $html = '<html>
          }
          #m_adhar{
             position: absolute;
-            top: 315px;
+            top: 310px;
             left: 130px;
             font-weight: bold;
             width: 305px;
@@ -351,7 +351,7 @@ while($row = mysqli_fetch_assoc($query)){
     for($i=0;$i<=strlen( $f_adhar );$i++){
         $html .= '<td style="padding-left:10px;width:15px;text-align:center;">'.substr( $f_adhar, $i, 1 ).'</td>';
     }
-    
+
     $html .= '</tr></table></div>';
 
     $html .= '<div id="bbmather">'.$row['baby_mother_name'].'</div>';
