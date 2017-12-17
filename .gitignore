@@ -2,3 +2,6 @@ sknh/db/
 *.log
 *.sql
 *.php~
+sknh/dompdf/lib/fonts/log.htm
+sknh/sknh.com-access_log
+sknh/sknh.com-error_log
