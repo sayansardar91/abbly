@@ -125,166 +125,166 @@ $html = '<html>
          }
          #addpbl1 {
             position: absolute;
-            top: 370px;
+            top: 365px;
             left: 250px;
             font-weight: bold;
          }
          #addpbl2 {
             position: absolute;
-            top: 390px;
+            top: 385px;
             left: 80px;
             font-weight: bold;
          }
          #addinf1 {
             position: absolute;
-            top: 410px;
+            top: 405px;
             left: 250px;
             font-weight: bold;
          }
          #addinf2 {
             position: absolute;
-            top: 430px;
+            top: 425px;
             left: 80px;
             font-weight: bold;
          }
          
          #vil {
             position: absolute;
-            top: 320px;
+            top: 315px;
             left: 650px;
          }
          #town {
             position: absolute;
-            top: 320px;
+            top: 315px;
             left: 550px;
          }
          #add {
             position: absolute;
-            top: 247px;
+            top: 245px;
             left: 700px;
             font-weight: bold;
             width:120px;
          }
          #dist {
             position: absolute;
-            top: 337px;
+            top: 335px;
             left: 700px;
             font-weight: bold;
          }
          #state {
             position: absolute;
-            top: 357px;
+            top: 352px;
             left: 700px;
             font-weight: bold;
          }
          #hindu {
             position: absolute;
-            top: 395px;
+            top: 390px;
             left: 532px;
             
          }
          #muslim {
             position: absolute;
-            top: 395px;
+            top: 390px;
             left:600px;
          }
          #chr {
             position: absolute;
-            top: 395px;
+            top: 390px;
             left:664px;
          }
          #fedu {
             position: absolute;
-            top: 450px;
+            top: 445px;
             left:700px;
             font-weight: bold;
          }
          #medu {
             position: absolute;
-            top: 520px;
+            top: 515px;
             left:700px;
             font-weight: bold;
          }
          #focu {
             position: absolute;
-            top: 580px;
+            top: 575px;
             left:700px;
             font-weight: bold;
          }
          #mocu {
             position: absolute;
-            top: 125px;
+            top: 120px;
             left:1030px;
             font-weight: bold;
          }
          #mage {
             position: absolute;
-            top: 170px;
+            top: 165px;
             left:1030px;
             font-weight: bold;
          }
          #cage {
             position: absolute;
-            top: 230px;
+            top: 225px;
             left:1030px;
             font-weight: bold;
          }
          #nchd {
             position: absolute;
-            top: 275px;
+            top: 270px;
             left:1030px;
             font-weight: bold;
          }
          #gov {
             position: absolute;
-            top: 359px;
+            top: 354px;
             left:856px;
          }
          #pvt {
             position: absolute;
-            top: 383px;
+            top: 378px;
             left:856px;
          }
          #dnt {
             position: absolute;
-            top: 399px;
+            top: 394px;
             left:856px;
          }
          #tba {
             position: absolute;
-            top: 419px;
+            top: 414px;
             left:856px;
          }
          #roo {
             position: absolute;
-            top: 442px;
+            top: 437px;
             left:856px;
          }
          #norm {
             position: absolute;
-            top: 500px;
+            top: 495px;
             left:874px;
          }
          #cs {
             position: absolute;
-            top: 522px;
+            top: 517px;
             left:874px;
          }
          
          #fv {
             position: absolute;
-            top: 542px;
+            top: 537px;
             left:874px;
          }
          #wtg {
             position: absolute;
-            top: 565px;
+            top: 560px;
             left:1040px;
             font-weight: bold;
          }
          #wk {
             position: absolute;
-            top: 595px;
+            top: 590px;
             left:1040px;
             font-weight: bold;
          }
