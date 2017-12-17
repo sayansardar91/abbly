@@ -42,9 +42,7 @@ class database {
         $fields = array_keys($form_data);
 
         // build the query
-        $sql = "REPLACE INTO " . $table_name . "
-    (`" . implode('`,`', $fields) . "`)
-    VALUES('" . implode("','", $form_data) . "')";
+        $sql = "REPLACE INTO " . $table_name . "(`" . implode('`,`', $fields) . "`)VALUES('" . implode("','", $form_data) . "')";
         //echo $sql;
         //die;
         // run and return the query result resource

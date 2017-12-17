@@ -327,7 +327,7 @@ class admission extends database {
         //echo $req;
         $query = $this->conn->query($req);
         $row = mysqli_fetch_assoc($query);
-        $results = "";
+        $results = array();
         foreach ($row as $key => $val) {
             if($key == 'baby_tob'){
                 //$timestamp = strtotime($val);
@@ -364,7 +364,7 @@ class admission extends database {
         //echo $req;
         $query = $this->conn->query($req);
         $row = mysqli_fetch_assoc($query);
-        $results = "";
+        $results = array();
         foreach ($row as $key => $val) {
             $results[$key] = $val;
         }

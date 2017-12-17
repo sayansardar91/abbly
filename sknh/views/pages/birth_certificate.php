@@ -130,17 +130,59 @@
                         <div class="row">
                             <div class="col-xs-6">
                                 <div class="form-group">
-                                    <label for="doc_name" class="col-xs-4 control-label">4. Name of the Father Full</label>
+                                    <label for="doc_name" class="col-xs-4 control-label">4. Father's Full Name</label>
                                     <div class="col-xs-7">
                                         <input type="text" class="form-control" id="baby_father_name" name="baby_father_name" />
+                                    </div>
+                                    <div class="col-xs-1 text-center">
+                                        <a href="javascript:void(null)" class="aadhar_link" data-aadhar-type="father">
+                                        <img 
+                                            src="images/Aadhaar_Logo.svg" 
+                                            alt="Link aadhaar"
+                                            height="30px"
+                                            width="30px" 
+                                            title="Add aadhaar number of father"
+                                            data-toggle="modal" data-target="#myModal"
+                                        />
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xs-6">
                                 <div class="form-group">
-                                    <label for="doj" class="col-xs-5 control-label">5. Name of the Mother Full</label>
-                                    <div class="col-xs-6">
+                                    <label for="doj" class="col-xs-4 control-label">5. Mother's Full Name</label>
+                                    <div class="col-xs-7">
                                         <input type="text" class="form-control" id="baby_mother_name" name="baby_mother_name" />
+                                    </div>
+                                    <div class="col-xs-1 text-center">
+                                        <a href="javascript:void(null)" class="aadhar_link" data-aadhar-type="mother">
+                                        <img 
+                                            src="images/Aadhaar_Logo.svg" 
+                                            alt="Link aadhaar"
+                                            height="30px"
+                                            width="30px" 
+                                            title="Add aadhaar number of mother"
+                                            data-toggle="modal" data-target="#myModal"
+                                        />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="display:none;" id="div_adhar">
+                            <div class="col-xs-6">
+                                <div class="form-group">
+                                    <label class="col-xs-4 control-label">AADHAAR No</label>
+                                    <div class="col-xs-7">
+                                        <label class="control-label" id="father_adhar"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="form-group">
+                                    <label class="col-xs-4 control-label">AADHAAR No</label>
+                                    <div class="col-xs-7">
+                                        <label class="control-label" id="mother_adhar"></label>
                                     </div>
                                 </div>
                             </div>
@@ -448,6 +490,46 @@
         </div>
     </div><!-- /.col-->
 </div></div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="col-xs-12 text-center">
+            <img 
+                    src="images/Aadhaar_Logo.svg" 
+                    alt="Link aadhar"
+                    height="80px"
+                    width="100px" 
+                    title="AADHAAR Details"
+                />
+          </div>
+          <div class="col-xs-12 text-center">
+            <h4 class="modal-title text-center">Put <span id="adhar-span"></span> AADHAAR Number</h4>    
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+                <div style="display: table;margin: 0 auto;">
+                 <input type="text" id="aadhaar_no" class='form-control text-center'>
+                </div>
+                <div style="display: table;margin: 0 auto; padding:5px;">
+                 <input type="button" id="btn-add-adhar" value="ADD" class="btn btn-primary">
+                </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
 <style>
     * {
         .border-radius: 0 !important;
@@ -465,6 +547,7 @@
     });
     $(document).ready(function () {
         //$('.bg-success,.bg-danger').hide();
+        $('#aadhaar_no').mask('9999-9999-9999');
         $.getJSON("action.php?action=get_dpt", function (data) {
             $('#dept_id').append(
                     $('<option></option>').val("").html("Select Department"));
@@ -509,6 +592,7 @@
         });
     });
     $('#baby_id').on('blur', function () {
+        $('#div_adhar').show();
         $.getJSON("action.php?action=get_baby&baby_id=" + $('#baby_id').val(), function (data) {
             $.each(data, function (i, value) {
                 if (i === 'baby_sex') {
@@ -541,12 +625,24 @@
                             $('#' + i + "2").val(value).attr('checked', 'checked');
                         }
                     }
-                    
-
                 } else if (i === 'baby_atn_delivery') {
                     $('#' + i + value).val(value).attr('checked', 'checked');
                 } else if (i === 'baby_method_delivery') {
                     $('#' + i + value).val(value).attr('checked', 'checked');
+                } else if(i == 'baby_father_aadhar'){
+                    $("#father_adhar").html(value);
+                    $('<input>').attr({
+                        type: 'hidden',
+                        name: i,
+                        value: value
+                    }).insertAfter("#father_adhar");
+                }else if(i == 'baby_mother_aadhar'){
+                    $("#mother_adhar").html(value);
+                    $('<input>').attr({
+                        type: 'hidden',
+                        name: i,
+                        value: value
+                    }).insertAfter("#mother_adhar");
                 }
                 else {
                     $('#' + i).val(value);
@@ -590,6 +686,48 @@
             $("#baby_pob_address").prop("disabled",true).val('');
         }
     });
+
+    $('.aadhar_link').on('click',function(){
+        $('#aadhaar_no').val('');
+        $('#adhar-span').html(ucword($(this).data('aadhar-type')+"'s"));
+        if($('#ahar_type').length == 0){
+            $('<input>').attr({
+                type: 'hidden',
+                id: 'ahar_type',
+                name: 'ahar_type',
+                value: $(this).data('aadhar-type')
+            }).insertAfter('#aadhaar_no');
+        }else{
+            $('#ahar_type').val($(this).data('aadhar-type'));
+        }
+    });
+
+    $('#btn-add-adhar').on('click',function(){
+        var intRegex = /^\d{4}-\d{4}-\d{4}$/g;
+        if($('#aadhaar_no').val().trim().match(intRegex)){
+            $('#div_adhar').show();
+            if($('input[name=baby_'+$('#ahar_type').val().trim()+'_aadhar]').length == 0){
+                $('<input>').attr({
+                    type: 'hidden',
+                    name: 'baby_'+$('#ahar_type').val().trim()+'_aadhar',
+                    value: $('#aadhaar_no').val().trim()
+                }).appendTo('#baby_doct_form');
+            }else{
+                $('input[name=baby_'+$('#ahar_type').val().trim()+'_aadhar]').val($('#aadhaar_no').val().trim());
+            }
+            $('#'+$('#ahar_type').val().trim()+'_adhar').html($('#aadhaar_no').val().trim());
+            $('#myModal').modal('hide');
+        }else{
+            console.log("In-Valid");
+        }
+    });
+    function ucword(str){
+        str = str.toLowerCase().replace(/(^([a-zA-Z\p{M}]))|([ -][a-zA-Z\p{M}])/g, function(replace_latter) { 
+            return replace_latter.toUpperCase();
+        });  //Can use also /\b[a-z]/g
+        return str;  //First letter capital in each word
+    }
+
 </script>
 <style>
     .time{margin-top: 10px;width: 50px;height: 34px;}

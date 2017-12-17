@@ -54,12 +54,27 @@ $html = '<html>
             left: 280px;
             font-weight: bold;
          }
+         #f_adhar{
+            position: absolute;
+            top: 255px;
+            left: 130px;
+            font-weight: bold;
+            width: 305px;
+         }
          #bbmather {
             position: absolute;
             top: 275px;
             left: 280px;
             font-weight: bold;
          }
+         #m_adhar{
+            position: absolute;
+            top: 315px;
+            left: 130px;
+            font-weight: bold;
+            width: 305px;
+         }
+
          #bbadd2 {
             position: absolute;
             top: 370px;
@@ -302,7 +317,7 @@ $html = '<html>
             top: 48px;
             left:640px;
             font-weight: bold;
-            }
+        }
     </style>
   </head>
   <body>
@@ -328,7 +343,22 @@ while($row = mysqli_fetch_assoc($query)){
     }
     $html .= '<div id="bbname">'.$row['baby_name'].'</div>';
     $html .= '<div id="bbfather">'.$row['baby_father_name'].'</div>';
+
+    $html .= '<div id="f_adhar"><table width="100%"><tr>';
+
+    $f_adhar = str_replace("-","",$row['baby_father_aadhar']);
+    for($i=0;$i<=strlen( $f_adhar );$i++){
+        $html .= '<td style="padding-left:10px;width:15px;text-align:center;">'.substr( $f_adhar, $i, 1 ).'</td>';
+    }
+    $html .= '</tr></table></div>';
+
     $html .= '<div id="bbmather">'.$row['baby_mother_name'].'</div>';
+    $html .= '<div id="m_adhar"><table width="100%"><tr>';
+    $m_adhar = str_replace("-","",$row['baby_mother_aadhar']);
+    for($i=0;$i<=strlen( $m_adhar );$i++){
+        $html .= '<td style="padding-left:10px;width:15px;text-align:center;">'.substr( $m_adhar, $i, 1 ).'</td>';
+    }
+    $html .= '</tr></table></div>';
     $html .= '<div id="bbadd2">'.$row['baby_pm_address'].'</div>';
     $html .= '<div id="bbad2">'.$row['baby_pr_address'].'</div>';
     switch($row['baby_pob']){
